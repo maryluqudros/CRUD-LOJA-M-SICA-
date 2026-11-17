@@ -12,5 +12,5 @@ if (!$conexao) {
     die("Falha na conexão: " . mysqli_connect_error());
 }
 
-my_set_charset($conexao, 'utf8');
+mysqli_set_charset($conexao, 'utf8');
 
